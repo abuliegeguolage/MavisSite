@@ -1,6 +1,26 @@
-:root {}
+:root {
+  --primary-color: rgb(75, 100, 100);
+  --deeper-primary: rgb(30, 65, 70);
+  --secondary-color: rgb(220, 225, 225);
+  --transparent-secondary: rgba(220, 225, 225, .2);
+}
 
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--secondary-color);
+}
+
+a {
+  color: unset;
+  text-decoration: unset;
+}
+
+li {
+  list-style-type: none;
 }

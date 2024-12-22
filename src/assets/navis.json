@@ -1,0 +1,10 @@
+{
+    "install": {
+        "name": "安裝",
+        "path": "/install"
+    },
+    "project": {
+        "name": "專案作品",
+        "path": "/project"
+    }
+}
