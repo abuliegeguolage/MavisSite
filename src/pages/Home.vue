@@ -57,12 +57,6 @@
   align-items: center;
   justify-content: center;
   margin: auto;
-  width: 400px;
-
-  @media screen and (max-width: 767px) {
-    flex-direction: column;
-    width: 300px;
-  }
 
   .link-btn {
     color: var(--secondary-color);

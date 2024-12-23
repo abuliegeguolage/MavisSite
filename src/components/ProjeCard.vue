@@ -127,6 +127,10 @@ const options = {
             &:hover {
                 background-size: 120%;
             }
+
+            @media screen and (max-width: 767px) {
+                margin-bottom: 20px;
+            }
         }
 
         .rader-box {
