@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 import navis from '../assets/navis.json';
 
-let drawer = ref(false);
+const drawer = ref(false);
 
 </script>
 
