@@ -14,7 +14,15 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: white;
+  background-image: url('./assets/images/background.webp');
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position: center;
+
+  @media screen and (max-width: 767px) {
+    background-size: 400%;
+    background-position: 70% 0%;
+  }
 }
 
 a {

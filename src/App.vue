@@ -15,6 +15,6 @@ main {
   padding: 0 5vw;
   width: 80vw;
   min-height: 90vh;
-  background-color: var(--secondary-color);
+  background-color: rgba(255, 255, 255, .7);
 }
 </style>
