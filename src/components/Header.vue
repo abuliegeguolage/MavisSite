@@ -1,8 +1,17 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import { router } from '../router';
 import navis from '../assets/navis.json';
 
 const drawer = ref(false);
+
+const knockTimes = ref(0);
+const knockKnock = () => {
+    if (++knockTimes.value >= 3) {
+        router.push('/secret');
+        knockTimes.value = 0;
+    }
+}
 
 </script>
 
@@ -21,6 +30,7 @@ const drawer = ref(false);
                 </h2>
             </v-btn>
         </RouterLink>
+        <div @click="knockKnock" class="secret"></div>
         <section class="navis">
             <ul class="tabs">
                 <li v-for="item in navis">
@@ -80,6 +90,13 @@ const drawer = ref(false);
         .noumenon {
             color: var(--secondary-color);
         }
+    }
+
+    .secret {
+        position: absolute;
+        left: 170px;
+        width: 30px;
+        height: 30px;
     }
 
     .navis {
